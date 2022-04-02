@@ -1,0 +1,34 @@
+import Heart from './Heart';
+
+const messages = [
+    'cool cud',
+    'me my <3',
+    'you are bear',
+    'team bear',
+    'time hug',
+    'fang',
+    'bog love',
+    'me have love',
+    'all hover',
+    'sweat poo',
+    'u hack',
+    'stank love',
+    'heart me',
+    'wink bear',
+    'bear bear',
+    'be my bear',
+    'yank o way',
+    'mage love',
+    'oy',
+    'in a fan'
+];
+
+const HeartsList = () => {
+    return (
+        <div className='hearts-container'>
+            {messages.map(message => <Heart msg={message} />)}
+            {/* returns new array of messages, with each message contained in a heart */}
+        </div>
+    )
+}
+export default HeartsList;
